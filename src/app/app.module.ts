@@ -1,0 +1,22 @@
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
+
+// Services
+import { DataService } from './shared/index';
+
+import { AppComponent } from './app.component';
+
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    HttpModule
+  ],
+  providers: [ DataService],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
